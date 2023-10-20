@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./車.svg">
+    <title>玩透景點</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /**/
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('./dark-planet.jpg') no-repeat;
+            /* 背景圖*/
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            /**/
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+            max-width: 300px;
+            padding: 10px;
+            margin: 40px;
+        }
+
+        .image {
+            display: block;
+            width: 110%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            /* Black see-through */
+            color: #f1f1f1;
+            width: 102%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .mylocation {
+            font-size: 30px;
+            font-weight: bolder;
+            color: slategray;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <h2  class="mylocation" style="padding-left: 650px;padding-top: 40px; display: inline;">各地知名景點</h2>
+    <span class="mylocation" style="padding-left: 400px;"><a href="./會員登入最終.html" style="text-decoration: none;color: slategray;">首頁</a> </span>
+    <div class="mylocation">北部:</div>
+    <div style="display:flex;">
+
+        <div class="container">
+            <img src="../照片集/基隆.jpg" alt="Avatar" class="image">
+            <div class="overlay"><a href="https://tour.klcg.gov.tw/zh-hant/attractions/6079134/" style="text-decoration: none; color: #fff;"  target="_blank">基隆正濱漁港</a></div>
+        </div>
+        <div class="container">
+            <img src="../照片集/象山.jpg" alt="Avatar" class="image">
+            <div class="overlay"><a href="https://www.travel.taipei/zh-tw/attraction/details/185" style="text-decoration: none; color: #fff;"target="_blank">台北象山</a></div>
+        </div>
+        <br><br>
+        <div class="container">
+            <img src="../照片集/桃園.jpg" alt="Avatar" class="image">
+            <div class="overlay"><a href="https://travel.tycg.gov.tw/zh-tw/travel/attraction/351" style="text-decoration: none; color: #fff;" target="_blank">桃園石門水庫</a></div>
+        </div>
+        <div class="container">
+            <img src="../照片集/新竹.jpg" alt="Avatar" class="image">
+            <div class="overlay"><a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00276" style="text-decoration: none; color: #fff;" target="_blank">新竹湖口老街</a></div>
+        </div>
+    </div>
+    <div style="display:flex;">
+        <div class="container">
+            <img src="../照片集/苗栗.jpg" alt="Avatar" class="image">
+            <div class="overlay"><a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001110&id=C100_342" style="text-decoration: none; color: #fff;" target="_blank">苗栗龍騰斷橋</a></div>
+        </div>
+        <div class="container">
+            <img src="../羅東/傳藝畫舫船遊月湖.jpg" alt="Avatar" class="image">
+            <div class="overlay"><a href="../最終.html" style="text-decoration: none; color: #fff;" target="_blank">宜蘭傳藝中心</a></div>
+        </div>
+    </div>
+    <div class="mylocation">中部:</div>
+    <div style="display:flex;">
+        <div class="container">
+            <img src="../照片集/台中.jpg" alt="Avatar" class="image">
+            <div class="overlay">台中高美濕地</div>
+        </div>
+        <div class="container">
+            <img src="../照片集/彰化.jpg" alt="Avatar" class="image">
+            <div class="overlay">彰化八卦山</div>
+        </div>
+        <div class="container">
+            <img src="../照片集/武嶺.jpg" alt="Avatar" class="image">
+            <div class="overlay">南投武嶺</div>
+        </div>
+        <div class="container">
+            <img src="../照片集/雲林.jpg" alt="Avatar" class="image">
+            <div class="overlay">雲林青埔落羽松秘境</div>
+        </div>
+    </div>
+    <div class="mylocation">南部:</div>
+    <div style="display:flex;">
+        <div class="container">
+            <img src="../照片集/嘉義.jpg" alt="Avatar" class="image">
+            <div class="overlay">嘉義阿里山</div>
+        </div>
+        <div class="container">
+            <img src="../照片集/台南.jpg" alt="Avatar" class="image">
+            <div class="overlay">台南億載金城</div>
+        </div>
+        <div class="container">
+            <img src="../照片集/高雄.jpg" alt="Avatar" class="image">
+            <div class="overlay">高雄西子灣</div>
+        </div>
+        <div class="container">
+            <img src="../照片集/屏東.jpg" alt="Avatar" class="image">
+            <div class="overlay">屏東墾丁</div>
+        </div>
+    </div>
+    <div class="mylocation">東部:</div>
+    <div style="display:flex;">
+        <div class="container">
+            <img src="../照片集/台東.jpg" alt="Avatar" class="image">
+            <div class="overlay">台東朝日溫泉</div>
+        </div>
+        <div class="container">
+            <img src="../照片集/貨櫃屋星巴克.jpg" alt="Avatar" class="image">
+            <div class="overlay">花蓮貨櫃屋星巴克</div>
+        </div>
+    </div>
+</body>
+
+</html>
